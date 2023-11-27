@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="teste()">Clique aqui!!</button>
+    <script>
+        function teste(){
+            var qtd = parseInt(prompt("Digite um valor numérico: ")) //3
+            
+             var contPar = 0
+             var contImpar = 0;
+            for( var i = 1 ; i <= qtd ; i++){
+                    x = parseInt(prompt("Digite o número: "))//3, 5, 6
+                    if(x % 2 == 0){
+                        contPar++ //1
+                    }
+                    else{
+                        contImpar++ //1, 2
+                    }
+            
+            }
+            
+            window.alert(`A quantidade de Par é: ${contPar} - E a quantidade de Impar é: ${contImpar}`)
+            document.write("Quantidade de valores pares: "+contPar+ " Quantidade de valores impares: " + contImpar)
+        }
+
+    </script>
+</body>
+</html>

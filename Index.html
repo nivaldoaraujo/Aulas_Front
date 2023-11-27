@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="laco()" >Vamos testar</button>
+
+    <script>
+        
+        function laco(){
+            // var r, x, i
+            // i = 1
+
+            // while(i <= 5){
+            //     x = parseInt(prompt("Digite o numero: "))
+            //     r = x * 3
+            //     window.alert(`Tentativa numero: ${i} - Os valores - ${x} *3 = ${r}`)
+            //     i++
+            // }
+            var r, i, media = 0 , total
+            var totalDeEventos = parseInt(prompt("Quantas notas serão realizadas?")); //3
+
+            for(i = 1; i <= totalDeEventos ; i++){
+                var x = parseFloat(prompt("Digite o numero: "))//2, 3, 2
+                media = media + x //5 + 2 = 7
+                //window.alert(`media = ${media}`)
+            }
+            total = media / totalDeEventos
+            window.alert(`Quantidade de valores: ${--i} - A média destes valores é: ${total}`)
+            document.write("A média foi: ", total)
+            console.log(total)
+        }
+    </script>
+    
+
+
+
+    <!-- <script>
+       var a = parseInt(window.prompt("Digite o valor 1"))
+       var b = parseInt(window.prompt("Digite o valor 2"))
+        //var nome = window.prompt("Digite o seu nome")
+
+    var x = (a + b)
+    if(x > 10){
+        window.alert("Isso foi verdadeiro!!")
+        //var f = "Isso foi verdadeiro " + "Valor 1 é: "+ a +"Valor 2: " + b
+        var f = `Isso foi verdadeiro ! ${x} O valor de X é: ${a}`
+    }
+
+        console.log(f) 
+    </script> -->
+</body>
+</html>

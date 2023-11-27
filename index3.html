@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="estacao()">Veja as estações do ano</button>
+    <script>
+        function estacao(){
+            var valor = prompt("Digite o Mês")
+
+            switch(valor)
+            {
+                case "Janeiro":
+                case "Fevereiro":
+                case "Março":
+                    window.alert(`Estação Verão!!`)
+                    break
+                case "Abril":
+                case "Maio":
+                case "Junho":
+                    window.alert(`Estação Outono!!`)
+                    break
+                case "Julho":
+                case "Agosto":
+                case "Setembro":
+                    window.alert(`Estação Inverno!!`)
+                    break
+                case "Outubro":
+                case "Novembr":
+                case "Dezembro":
+                    window.alert(`Estação Primavera!!`)
+                    
+
+            }
+        }
+    </script>
+</body>
+</html>
